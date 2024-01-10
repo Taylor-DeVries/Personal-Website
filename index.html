@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor DeVries - Personal Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eccedf;
+        }
+
+        header {
+            background-color: #333;
+            color: #b7afaf;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add some padding at the bottom to avoid overlap with the fixed footer */
+    section:not(:last-child) {
+        margin-bottom: 2em;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Taylor DeVries</h1>
+        <p>Software Engineering Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Taylor DeVries, and I am currently in my 1B term of Software Engineering at the University of Waterloo. 
+            <br> <br>I have a strong foundation in programming, logical thinking, and problem-solving. As a proactive learner and effective communicator, I excel in team environments and have experience leading groups. I am eager to apply my technical and interpersonal skills to contribute effectively in any professional setting.</p>
+    
+        <p>In my free time, I enjoy exploring new technologies, rock climbing with friends, and staying updated with the latest developments in the software engineering field. I am passionate about using technology to solve real-world problems and create innovative solutions.</p>
+
+        <p>For the future I see myself working in tech and traveling the world! I love a good adventure and I have had the privilege of visitng some amazing countries including Iceland, France, The Netherlands, Spain, England, Belgium and hopefully many more to come!</p>
+    
+        <p>Feel free to navigate to the <b>Projects</b> section to learn more about the exciting projects I have worked on!</p>
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <b>AR Goggles – Résuview</b> Hardware Specialist/Project Manager<br>
+            Check out the Video Demo: <a href="https://youtu.be/sjttNGrEmtk" target="_blank">Resuview</a> <br>
+            For the SE101 course in my 1A term, my team and I successfully made working AR goggles that displays resumes next to job seeker’s faces. My responsibilities including working in Fusion 360 for the modelling of parts, and properly assembling the device under physical constraints. <br> <br>
+            
+
+            <b>AutoRithm Robot - University of Waterloo Women in Engineering Hackathon</b> <br>
+            Devpost: <a href="https://devpost.com/software/handsfree-y7lsbq" target="_blank">AutoRithm</a> <br>
+            Constructed AutoRithm robot made with Lego EV3 coded in ROBOT-C that sorts through food items and autonomizes food packaging. <br> <br>
+            
+            <b>Arduino Car - GDG DevFest</b> Hardware Specialist <br>
+            Worked with Arduino and coded in Python to construct an autonomous drive train that completed loops through an obstacle course.
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="/submit" method="post" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 DeVries
+    </footer>
+
+</body>
+</html>
